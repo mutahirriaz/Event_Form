@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Catogeries from "./Components/Catogeries";
+import Dashboard from "./Components/Dashboard";
+import { Container } from "@mui/material";
+import Addons from "./Components/Addons";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Container maxWidth="xl">
+        <Dashboard />
+        <Catogeries />
+        {/* <Tabs /> */}
+        {/* <Addons /> */}
+      </Container>
     </div>
   );
 }
